@@ -3,3 +3,14 @@ html, body {
     padding: 0;
     background-color: #E5E5E5;
 }
+
+.container {
+    display: grid | inline-grid;
+  }
+
+  .item-1 {
+    grid-column-start: 2;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 3;
+  }
