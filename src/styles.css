@@ -4,9 +4,20 @@ html, body {
     background-color: #E5E5E5;
 }
 
+p {
+    border: solid thin yellow;    
+    font-weight: bolder;
+    text-align: left; 
+}
+
 .container {
+    flex: 2 0px;
     margin: 5px;
     background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 2em; 
+    border: solid thin red;
 }
 
 .wrapper {
@@ -14,25 +25,50 @@ html, body {
     flex-flow: row wrap;
     font-weight: bold;
     text-align: center; 
-  }
-  
-  .wrapper > * {
+    border: solid thin green;
+}
+
+.main {
+    border: solid thin hotpink;
+}
+
+.title {
+    border: solid thin orange;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.image {
+    border: solid thin purple;
+} 
+
+.footer {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bolder;
+    text-align: center; 
+    border: solid thin blue;
+}
+
+.date {
+    border: solid thin brown;
+}
+
+/*
+.wrapper > * {
     padding: 10px;
     flex: 1 100%;
-  }
+    border: solid thick purple;
+}
+*/
+
+/* i don't really get how this works still */
+@media all and (min-width: 600px) {
+    .image { flex: auto; }
+}
   
-  @media all and (min-width: 600px) {
-    .aside { flex: 1 0 0; }
-  }
-  
-  @media all and (min-width: 800px) {
-    .main    { flex: 3 0px; }
-    .aside-1 { order: 1; } 
-    .main    { order: 2; }
-    .aside-2 { order: 3; }
-    .aside-3  { order: 4; }
-  }
-  
-  body {
-    padding: 2em; 
-  }
+@media all and (min-width: 800px) {
+    .main { flex: 3 0px; }
+    .main { order: 1; }
+    .footer { order: 3;}
+}
