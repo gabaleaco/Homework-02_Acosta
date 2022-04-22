@@ -4,21 +4,35 @@ html, body {
     background-color: #E5E5E5;
 }
 
-.wrapper > div {
-    flex: 1;
+.container {
+    margin: 5px;
+    background-color: white;
 }
 
 .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px;
-    gap: 10px;
-}
-
-p {
-    background-color: rgb(207,232,220);
-    border: 2px solid rgb(79,185,227);
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center; 
+  }
+  
+  .wrapper > * {
     padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-}
+    flex: 1 100%;
+  }
+  
+  @media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .main    { flex: 3 0px; }
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .aside-3  { order: 4; }
+  }
+  
+  body {
+    padding: 2em; 
+  }
