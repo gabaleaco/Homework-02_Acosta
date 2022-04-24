@@ -1,7 +1,14 @@
 html, body {
-    margin: 0;
-    padding: 0;
     background-color: #E5E5E5;
+    /* display: flex; */
+    margin: 0;
+    padding: 0;    
+}
+
+aside {
+    border: solid thin yellow;    
+    font-weight: bolder;
+    text-align: right; 
 }
 
 p {
@@ -10,22 +17,34 @@ p {
     text-align: left; 
 }
 
-.container {
-    flex: 2 0px;
-    margin: 5px;
+.container1 { 
     background-color: white;
-    display: flex;
-    flex-flow: column wrap;
-    padding: 2em; 
     border: solid thin red;
+    display: flex;
+    padding: 1em;    
 }
 
-.wrapper {
+.wrapper1 {
+    border: solid thin green;
     display: flex;  
     flex-flow: row wrap;
     font-weight: bold;
-    text-align: center; 
+    text-align: center;     
+}
+
+.container2 {
+    background-color: white;
+    border: solid thin red;
+    display: flex;
+}
+
+.wrapper2 {
     border: solid thin green;
+    display: flex;  
+    flex-direction: column;
+    flex-flow: column wrap;
+    font-weight: bold;
+    text-align: center;     
 }
 
 .main {
@@ -43,11 +62,11 @@ p {
 } 
 
 .footer {
+    border: solid thin blue;
     display: flex;  
     flex-flow: row wrap;
     font-weight: bolder;
-    text-align: center; 
-    border: solid thin blue;
+    text-align: center;     
 }
 
 .date {
@@ -56,9 +75,9 @@ p {
 
 /*
 .wrapper > * {
-    padding: 10px;
-    flex: 1 100%;
     border: solid thick purple;
+    padding: 10px;
+    flex: 1 100%;    
 }
 */
 
