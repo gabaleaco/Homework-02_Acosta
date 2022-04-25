@@ -6,7 +6,7 @@ html, body {
 }
 
 aside {
-    border: solid thin purple;    
+    /* border: solid thin purple; */
     text-align: center; 
 }
 
@@ -16,60 +16,77 @@ button {
 }
 
 p {
-    border: solid thin yellow;    
+    /* border: solid thin yellow; */
     font-weight: bolder;
     text-align: left; 
 }
 
-.btn {
-    width: 15%;
-    background-color: blue; 
+.btn {    
+    background-color: blue;
+    border-color: blue;
     border-radius: 5px; 
     color: white;  
+    font-weight: bold;
+    width: 15%;
 }
 
 .container1 { 
     background-color: white;
-    border: solid thin red;
+    /* border: solid thin red; */
     display: flex;
     padding: 1em;    
 }
 
 .container2 {
     background-color: white;
-    border: solid thin red;
+    /* border: solid thin red; */
     display: flex;
 }
 
 .date {
-    border: solid thin brown;
+    /* border: solid thin brown; */
     align-self: flex-end;
 }
 
+/* couldn't figure out how to make the footer smaller without
+making the images in the footer overflow*/
 .footer {
-    border: solid thin blue;
+    /* border: solid thin blue; */
     display: flex;
     font-weight: bolder;
+    justify-content: space-between;
     text-align: center;     
 }
 
 .image {
     background-color: gray;
+    /* border: solid thin yellow; */
+}
+
+/* created this as for separate footer image size control
+but various height/flexflow/etc attempts were unsuccessful*/
+.imageFooter {
+    background-color: gray;
+    /* border: solid thin yellow; */
 }
 
 .main {
-    border: solid thin hotpink;
+    /* border: solid thin hotpink; */
 }
 
+/* not sure why overflow isn't working */
 .title {
-    border: solid thin orange;
+    /* border: solid thin orange; */
     font-weight: bolder;
+    overflow: hidden;
     text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .wrapper1 {
     align-items: center;
-    border: solid thin green;
+    border: solid thin black;
     display: flex;
     flex-flow: row wrap;
     font-weight: bold;
@@ -78,7 +95,7 @@ p {
 
 .wrapper2 {
     align-items: center;
-    border: solid thin green;
+    border: solid thin black;
     display: flex;
     flex-flow: column wrap;
     font-weight: bold;
