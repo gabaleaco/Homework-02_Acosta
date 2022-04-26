@@ -88,7 +88,7 @@ but various height/flexflow/etc attempts were unsuccessful*/
     align-items: center;
     border: solid thin black;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     font-weight: bold;
     text-align: center;
 }
@@ -97,7 +97,7 @@ but various height/flexflow/etc attempts were unsuccessful*/
     align-items: center;
     border: solid thin black;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     font-weight: bold;
     text-align: center;    
 }
